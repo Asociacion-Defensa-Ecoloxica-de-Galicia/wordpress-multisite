@@ -122,6 +122,9 @@ if ($configExtra = getenv_docker('WORDPRESS_CONFIG_EXTRA', '')) {
 	eval($configExtra);
 }
 
+// Enables multisite
+define( 'WP_ALLOW_MULTISITE', true );
+
 // Makes Wordpress redirections fits in proxy address
 #define( 'WP_HOME', 'http://localhost/' );
 #define( 'WP_SITEURL', 'http://localhost:8080/' );

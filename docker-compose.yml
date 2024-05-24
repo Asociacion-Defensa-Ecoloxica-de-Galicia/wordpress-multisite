@@ -18,6 +18,7 @@ services:
       - ./src:/var/www/html/wp-content/:rw
       - ./.wp/:/var/www/html/:rw
       - ./config/wp/wp-config.php:/var/www/html/wp-config.php:rw
+      - ./config/wp/wpse-ms-on-different-port.php:/var/www/html/wp-content/mu-plugins/wpse-ms-on-different-port.php
     environment:
       WORDPRESS_DB_HOST: db
       WORDPRESS_DB_USER: wpuser
