@@ -126,11 +126,8 @@ if ($configExtra = getenv_docker('WORDPRESS_CONFIG_EXTRA', '')) {
 define( 'WP_ALLOW_MULTISITE', true );
 
 // Makes Wordpress redirections fits in proxy address
-#define( 'WP_HOME', 'http://localhost/' );
-#define( 'WP_SITEURL', 'http://localhost:8080/' );
 define('.COOKIE_DOMAIN.', 'localhost');
 define('.SITECOOKIEPATH.', '.');
-
 if(isset($_SERVER['HTTP_X_FORWARDED_FOR'])) {
         $list = explode(',',$_SERVER['HTTP_X_FORWARDED_FOR']);
         $_SERVER['REMOTE_ADDR'] = $list[0];
