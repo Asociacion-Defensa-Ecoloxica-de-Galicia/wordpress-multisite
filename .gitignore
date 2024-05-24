@@ -1,3 +1,11 @@
 db/
 .wp/
 logs/
+src/index.php
+src/plugins/akismet
+src/plugins/hello.php
+src/plugins/index.php
+src/themes/twentytwentyfour
+src/themes/twentytwentythree
+src/themes/twentytwentytwo
+src/themes/index.php
