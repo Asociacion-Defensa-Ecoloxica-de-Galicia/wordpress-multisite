@@ -1,22 +1,18 @@
 # ADEGA Wordpress Multisite
 
+## Folders
+
+* `src/` Development folder (/wp-content).
+* `config/` Configuration folder for NGINX and Wordpress. 
+* `.wp/` Web root folder (/). Excluded from Git repo.
+* `logs/` Web server logs. Excluded from Git repo.
+
 ## Instructions
-
-Add user to `www-data` group.
-
-```sh
-sudo usermod usuario -a -G www-data
-newgrp usuario
-```
 Run containers
-```sh
-docker-compose up
+```console 
+$ docker-compose up -d
 ```
 Stop containers
-```sh
-docker-compose down
-```
-or 
-```sh
-Ctrl-C
+```console
+$ docker-compose down
 ```
