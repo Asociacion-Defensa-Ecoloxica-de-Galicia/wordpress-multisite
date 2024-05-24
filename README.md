@@ -10,9 +10,9 @@
 ## Instructions
 Run containers
 ```console 
-$ docker-compose up -d
+$ docker compose up -d
 ```
 Stop containers
 ```console
-$ docker-compose down
+$ docker compose down
 ```
