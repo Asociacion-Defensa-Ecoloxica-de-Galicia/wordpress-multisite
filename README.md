@@ -28,16 +28,18 @@ $ docker compose up -d
 ```console
 $ docker compose down
 ```
-### Setting up Wordpress
+## Setting up Wordpress
+
+### Basic setup
+
 Open Wordpress and follow dialogs.
+
 ![Select languaje](doc/images/img01.png)
 ![Provide site data](doc/images/img02.png)
 ![Click to login](doc/images/img03.png)
 ![Login](doc/images/img04.png)
 
-
-
-### Using WP multisite
+### Setting up WP multisite
 1. Enable Multisite.
 
 ![Go to network initialization](doc/images/img11.png)
@@ -55,12 +57,16 @@ Open Wordpress and follow dialogs.
 
 ![Go to sites pannel](doc/images/img21.png)
 
-5. Create new site.
+## Managing network sites
+
+### Create new site.
+
+1. Create the site.
 
 ![Click add new site button](doc/images/img22.png)
 ![Provide new site data](doc/images/img23.png)
 
-6. Go to new site pannel.
+2. Go to new site pannel.
 
 ![Go to new site pannel](doc/images/img24.png)
 
