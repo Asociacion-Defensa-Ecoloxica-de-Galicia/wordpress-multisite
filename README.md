@@ -9,8 +9,8 @@
 * `.db/` Database files. Excluded from Git repo.
 * `logs/` Web server logs. Excluded from Git repo.
 
-## Instructions
-### Installing environment
+## Environment
+### Installation
 * Prerequisites:
     * Git
     * Docker
@@ -19,14 +19,23 @@
 git clone https://github.com/Asociacion-Defensa-Ecoloxica-de-Galicia/wordpress-multisite.git
 ```
 ### Using environment
-Run containers
+* Run containers.
 ```console 
 $ docker compose up -d
 ```
-Stop containers
+* Access Wordpress at http://localhost:8080.
+* Stop containers.
 ```console
 $ docker compose down
 ```
+### Setting up Wordpress
+Open Wordpress and follow dialogs.
+![Select languaje](doc/images/img01.png)
+![Provide site data](doc/images/img02.png)
+![Click to login](doc/images/img03.png)
+![Login](doc/images/img04.png)
+
+
 
 ### Using WP multisite
 1. Enable Multisite.
@@ -59,5 +68,16 @@ $ docker compose down
 
 WP network sites can only use the themes and plugins previously authorized by the network admins. You can authorize themes and plugins installing them by `nerwork administrator` pannel.
 
+1. Go to network plugins or themes pannel.
+
 ![Go to network administrator menu](doc/images/img41.png)
+
+2. Search and install the desired plugin or theme.
+
 ![Install new plugin or theme](doc/images/img42.png)
+
+3. ONLY FOR THEMES: enable theme for network so it becomes available for all the network sites.
+
+![If it's a theme, enable it for network sites](doc/images/img43.png)
+
+4. Now you can apply the installed theme or enable the installed plugin for any site opening correspondig site pannel.
