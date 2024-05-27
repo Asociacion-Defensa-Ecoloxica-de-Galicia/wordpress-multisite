@@ -1,10 +1,11 @@
-db/
+.db/
 .wp/
 logs/
 src/index.php
 src/plugins/akismet
 src/plugins/hello.php
 src/plugins/index.php
+src/mu-plugins/multisite-8080-port.php
 src/themes/twentytwentyfour
 src/themes/twentytwentythree
 src/themes/twentytwentytwo

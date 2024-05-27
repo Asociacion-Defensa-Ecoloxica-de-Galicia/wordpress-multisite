@@ -122,9 +122,6 @@ if ($configExtra = getenv_docker('WORDPRESS_CONFIG_EXTRA', '')) {
 	eval($configExtra);
 }
 
-// Enables multisite
-define( 'WP_ALLOW_MULTISITE', true );
-
 // Makes Wordpress redirections fits in proxy address
 define('.COOKIE_DOMAIN.', 'localhost');
 define('.SITECOOKIEPATH.', '.');
@@ -137,6 +134,17 @@ define( 'WP_SITEURL', 'http://localhost:8080' );
 $_SERVER['HTTP_HOST'] = 'localhost:8080';
 $_SERVER['REMOTE_ADDR'] = 'http://localhost:8080';
 $_SERVER[ 'SERVER_ADDR' ] = 'localhost:8080';
+
+// Enables multisite
+define( 'WP_ALLOW_MULTISITE', true );
+/* Uncoment after installing network 
+define( 'MULTISITE', true );
+define( 'SUBDOMAIN_INSTALL', false );
+define( 'DOMAIN_CURRENT_SITE', 'localhost:8080' );
+define( 'PATH_CURRENT_SITE', '/' );
+define( 'SITE_ID_CURRENT_SITE', 1 );
+define( 'BLOG_ID_CURRENT_SITE', 1 );
+*/
 
 /* That's all, stop editing! Happy publishing. */
 

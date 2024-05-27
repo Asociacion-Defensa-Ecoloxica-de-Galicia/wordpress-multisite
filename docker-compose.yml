@@ -18,7 +18,7 @@ services:
       - ./src:/var/www/html/wp-content/:rw
       - ./.wp/:/var/www/html/:rw
       - ./config/wp/wp-config.php:/var/www/html/wp-config.php:rw
-      - ./config/wp/wpse-ms-on-different-port.php:/var/www/html/wp-content/mu-plugins/wpse-ms-on-different-port.php
+      - ./config/wp/multisite-8080-port.php:/var/www/html/wp-content/mu-plugins/multisite-8080-port.php
     environment:
       WORDPRESS_DB_HOST: db
       WORDPRESS_DB_USER: wpuser
@@ -29,7 +29,7 @@ services:
   db:
     image: mariadb
     volumes:
-      - ./db/:/var/lib/mysql
+      - ./.db/:/var/lib/mysql
     environment:
       MARIADB_ROOT_PASSWORD: rootsecret
       MARIADB_USER: wpuser
