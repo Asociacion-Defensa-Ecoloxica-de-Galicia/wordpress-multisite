@@ -4,6 +4,7 @@
 
 * `src/` Development folder (/wp-content).
 * `config/` Configuration folder for NGINX and Wordpress. 
+* `doc` Documentation related files.
 * `.wp/` Web root folder (/). Excluded from Git repo.
 * `.db/` Database files. Excluded from Git repo.
 * `logs/` Web server logs. Excluded from Git repo.
